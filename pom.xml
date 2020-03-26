@@ -34,9 +34,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-		    <groupId>org.codehaus.mojo</groupId>
-		    <artifactId>sonar-maven-plugin</artifactId>
-		    <version>${sonar.version}</version>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>${sonar.version}</version>
 		</dependency>
 
 	</dependencies>
@@ -84,6 +84,11 @@
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.0.0</version>
 				</plugin>
+				<plugin>
+					<groupId>org.eluder.coveralls</groupId>
+					<artifactId>coveralls-maven-plugin</artifactId>
+					<version>4.3.0</version>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -101,7 +106,7 @@
 						<artifactId>jacoco-maven-plugin</artifactId>
 						<version>${jacoco.version}</version>
 						<configuration>
-				              <propertyName>surefireArgLine</propertyName>			
+							<propertyName>surefireArgLine</propertyName>
 						</configuration>
 					</plugin>
 				</plugins>
